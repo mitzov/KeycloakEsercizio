@@ -1,9 +1,9 @@
 export const environment = {
   production: false,
   keycloak: {
-    url: 'URL DI KEYCLOAK SENZA LO / FINALE',
-    realm: 'NOME DEL REALM CREATO SU KEYCLOAK',
-    clientId: 'CLIENT ID INSERITO SU KEYCKLOAK',
+    url: 'https://friendly-broccoli-wrxx4wp9795296p-8080.app.github.dev',
+    realm: 'Registro Elettronico',
+    clientId: 'Registro',
     redirectUri: window.location.origin,
   }
 };
