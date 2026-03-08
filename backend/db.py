@@ -4,7 +4,7 @@ class Database:
 
     def __init__(self):
         self.conn = pymysql.connect(
-            host="mysql",
+            host="localhost",
             user="root",
             password="password",
             database="registro",
