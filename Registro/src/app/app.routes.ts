@@ -6,6 +6,7 @@ import { studenteGuard } from './studente-guard';
 import { AccessoNegato } from './accesso-negato/accesso-negato';
 
 export const routes: Routes = [
+    
 
 {
 path:'docente',
@@ -23,5 +24,6 @@ canActivate:[studenteGuard]
 path:'accesso-negato',
 component:AccessoNegato
 }
+
 
 ];

@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterOutlet, RouterLink, RouterLinkActive } from "@angular/router";
+import { AuthService } from "./core/auth.service";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+selector: 'app-root',
+imports: [CommonModule,RouterOutlet, RouterLink, RouterLinkActive],
+templateUrl: './app.html',
+styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Registro');
+constructor(public auth: AuthService) {}
 }
