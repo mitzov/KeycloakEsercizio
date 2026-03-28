@@ -31,4 +31,10 @@ export class AuthService {
     return this.keycloak.token;
   }
 
+  // Controlla se l'utente ha un determinato ruolo
+// Lo useremo nell'HTML con authService.hasRole('user_plus')
+hasRole(role: string): boolean {
+    return this.keycloak.tokenParsed?.['realm_access']?.roles?.includes(role) ?? false;
+}
+
 }

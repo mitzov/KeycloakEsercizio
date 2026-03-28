@@ -16,7 +16,7 @@ canActivate:[docenteGuard]
 
 {
 path:'studente',
-component:StudenteComponent,
+component:StudenteComponent,  
 canActivate:[studenteGuard]
 },
 
